@@ -46,12 +46,12 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Jane {""}
+            Nishant {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
               before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
             >
-              Esper
+              Katekar
             </span>
           </p>
 
@@ -86,7 +86,7 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="bg-deep-blue hover:text-sky-700 transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
               Let's talk.
             </div>
           </AnchorLink>
