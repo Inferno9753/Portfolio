@@ -24,7 +24,7 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
         <div className="flex items-center justify-between mx-auto w-5/6">
-            <h4 className="font-playfair font-3xl font-bold">FE</h4>
+            <h4 className="font-playfair font-3xl font-bold">PORTFOLIO</h4>
             {isAboveSmallScreens?(
                 <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
                 <Link
@@ -43,18 +43,13 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}) => {
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Testimonials"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
                 page="Contact"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
                 </div>
             ):(
-              <button className="rounded-full bg-red p-2" onClick={()=>setIsMenuToggled(!isMenuToggled)}>
+              <button className="rounded-full bg-sky-700 p-2" onClick={()=>setIsMenuToggled(!isMenuToggled)}>
                 <img alt="menu-icon" src="../assets/menu-icon.svg"/>
               </button>
             )}
@@ -81,11 +76,6 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}) => {
                   />
                   <Link
                     page="Projects"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Testimonials"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />

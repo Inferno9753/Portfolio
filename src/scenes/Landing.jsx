@@ -19,15 +19,15 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px] h-[500px]"
-              src="assets/profile-image.png"
+              className="hover:filter hover:saturate-200 rounded-t-[400px] transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px] h-[500px]"
+              src={require('../assets/port3.jpg')}
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="assets/profile-image.png"
+            src={require('../assets/port3.jpg')}
           />
         )}
       </div>
@@ -56,8 +56,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+          Hey there, I'm Nishant Katekar, a passionate web development enthusiast. As I embark on my journey in the world of web development, I invite you to explore my humble collection of projects. Each project is a stepping stone in my quest to become a web development maestro. Join me as I learn, grow, and craft digital wonders that will leave you spellbound.
           </p>
         </motion.div>
 

@@ -15,21 +15,60 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+const Project1 = () => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative">
-      <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
-        </p>
-      </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <a href="https://github.com/Inferno9753/Game">
+        <div className={overlayStyles}>
+          <p className="text-2xl font-playfair">1</p>
+          <p className="mt-7">
+            Simple game but fun to play. This game challenges you by testing your memory.
+            This game was buit with <span className="text-sky-700 font-semibold">HTML</span>, <span className="text-red font-semibold">CSS</span> and <span className="text-yellow font-semibold">Javascript</span>.
+          </p>
+        </div>
+        <img src={require('../assets/project-1.png')} alt="Project-1" />
+      </a>
+    </motion.div>
+  );
+};
+
+const Project2 = () => {
+  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+
+  return (
+    <motion.div variants={projectVariant} className="relative">
+      <a href="https://github.com/Inferno9753/Clothing-App">
+        <div className={overlayStyles}>
+          <p className="text-2xl font-playfair">2</p>
+          <p className="mt-7">
+            Shop your clothes here. There are varieties of clothes with many categories. This application was built with <span className="text-sky-700 font-semibold">React Js</span>.
+          </p>
+        </div>
+        <img src={require('../assets/project-2.png')} alt="Project-2" />
+      </a>
+    </motion.div>
+  );
+};
+
+const Project3 = () => {
+  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+
+  return (
+    <motion.div variants={projectVariant} className="relative">
+      <a href="https://github.com/Inferno9753/react-blog-frontend">
+        <div className={overlayStyles}>
+          <p className="text-2xl font-playfair">3</p>
+          <p className="mt-7">
+            Read and create interesting blog posts.This application was built with <span className="text-sky-700 font-semibold">React Js</span>, <span className="text-red font-semibold">Node Js</span> and <span className="text-yellow font-semibold">MongoDB</span>.
+          </p>
+        </div>
+        <img src={require('../assets/project-3.png')} alt="Project-3" />
+      </a>
     </motion.div>
   );
 };
@@ -51,16 +90,14 @@ const Projects = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            <span className="text-red">PRO</span>JECTS
+            <span className="text-sky-700">PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+          Here, you'll find a curated selection of projects that showcase my skills, creativity, and passion for Web development. Each project represents a unique journey and a commitment to delivering excellence.
         </p>
       </motion.div>
 
@@ -73,30 +110,9 @@ const Projects = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {/* ROW 1 */}
-          <div
-            className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            BEAUTIFUL USER INTERFACES
-          </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
-
-          {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
-
-          {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
-          <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            SMOOTH USER EXPERIENCE
-          </div>
+          <Project1 />
+          <Project2 />
+          <Project3 />
         </motion.div>
       </div>
     </section>
